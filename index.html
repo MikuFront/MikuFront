@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>初音陣線 MikuFront</title>
+    <link rel="icon" href="/img/Miku.png" type="image/x-icon">
+    <script type="text/javascript" src='js/size.js'></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <script type="text/javascript" src='js/draw.js'></script>
+    <style>
+        body {
+            background-color: black;
+            color: #cccccc;
+        }
+
+        button {
+            font-family: monospace;
+            width: 100%;
+            color: #cccccc;
+            background-color: black;
+            border: none;
+            border-bottom: 1px solid #AAAAAA;
+            cursor: pointer;
+        }
+
+        .title_btn {
+            width: 100%;
+            height: 100%;
+            color: #cccccc;
+            text-align: left;
+            background-color: black;
+            border: none;
+            border-bottom: 1px solid #AAAAAA;
+        }
+
+        #back_btn {
+            position: -webkit-sticky;
+            width: 15%;
+            position: sticky;
+            top: 0;
+            background-color: green;
+            border: 2px solid #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .middle_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .btn-group .page_btn {
+            background-color: #4CAF50;
+            /* Green */
+            border: 1px solid green;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 10%;
+            cursor: pointer;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id='back_btn'>back</button>
+    <div id='main_view'>
+        <h1 id='main_title'>初音陣線 MikuFront</h1>
+        <button id='main_btn0'>Articles</button>
+        <div></div>
+        <button id='main_btn1'>good&bad</button>
+        <div></div>
+        <button id='main_btn2'>Event</button>
+        <div></div>
+        <button id='main_btn3'>作者</button>
+        <div></div>
+    </div>
+
+    <div id='art_view' style='display: none;'>
+        <div class='middle_div'>
+            <div id='arts' style="width: 90%;"></div>
+            <div id='art' style="width: 90%;"></div>
+        </div>
+        <br>
+        <div class="btn-group middle_div">
+            <button id='page_new' class='page_btn'>最新</button>
+            <button id='page_last' class='page_btn'>上一頁</button>
+            <button id='page_next' class='page_btn'>下一頁</button>
+            <button id='page_the_last' class='page_btn'>最舊</button>
+        </div>
+    </div>
+
+    <div id='rela_view' style='display: none;'>
+        <div id='top_good'></div>
+        <div id='top_bad'></div>
+        <div id='rela_cnt'></div>
+    </div>
+
+    <div id='event_view' style='display: none;'>
+    </div>
+    <canvas id='canvas'></canvas>
+
+</body>
+
+</html>
