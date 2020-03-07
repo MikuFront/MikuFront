@@ -62,7 +62,7 @@ window.onload = () => {
         app = new App();
         //
         document.getElementById('art_view').style.display = 'block';
-        //showArt(142);
+        // showArt(142);
         //
 
         // ------------------------------
